@@ -1,2 +1,2 @@
-# akusitfy
+# aqsitfy
 Akustify homepage
