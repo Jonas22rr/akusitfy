@@ -6,18 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.61/dist/themes/dark.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.61/dist/shoelace.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
 
 <body>
     <div class="topnav" id="myTopnav">
-        <img class="headerIcon" src="./pictures/logo.JPG" alt="logo">
-        <a href="#home" class="active">Home</a>
+        <img class="navLogo" src="" alt="">
+        <a href="#home">Home</a>
         <a href="#band">Band</a>
         <a href="#references">Referenzen</a>
         <a href="#contat">Kontakt</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <div class="header" id="idHeader">
+        <img id="idHeaderPicture" class="headerPicture" src="./pictures/logo.JPG" alt="Logo">
+    </div>
+    <div class="bandContainer">
+        <div class="headerText">
+            <h1>
+                Die Band
+            </h1>
+        </div>
+        <div class="bandText">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+        <div id="home" class="bandMembers">
+            <div class="bandMember">
+                <span class="names">Gero Steigerwald</span>
+                <img class="memberPic" src="./pictures/Thorsten_Bott.jpeg" alt="Gero Stieigerwald">
+            </div>
+            <div class="bandMember">
+                <span class="names">Nik Huber</span>
+                <img class="memberPic" src="./pictures/Nik_Huber.jpg" alt="Gero Stieigerwald">
+            </div>
+            <div class="bandMember">
+                <span class="names">Thorsten Bott</span>
+                <img class="memberPic" src="./pictures/Thorsten_Bott.jpeg" alt="Gero Stieigerwald">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="headerText">
+            <h1>
+                Referenzen
+            </h1>
+        </div>
+    </div>
+    <div class="contactContainer">
+        <div class="headerText">
+            <h1>
+                Kontaktiere uns
+            </h1>
+        </div>
+        <div class="contactBox">
+            <div class="contact1">
+                <div>
+                    <span>Aschaffenburg, DE</span>
+                </div>
+                <div>
+                    <span>Tel: 0160/93177315</span>
+                </div>
+                <div>
+                    <span>Email: aqstify-band@web.de</span>
+                </div>
+            </div>
+            <form type="submit" class="contact2">
+                <div class="inputContainer">
+                    <input id="nameInput" class="littleInput" type="text" placeholder="Name">
+                    <input class="littleInput" type="email" placeholder="Email">
+                </div>
+                <div class="messageContainer">
+                    <input id="messageInput" type="text" name="" placeholder="Nachricht">
+                </div>
+                <div class="btnContainer">
+                    <button id="idBtn" type="submit">senden</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="smContainer">
+        <div class="headerText  smBox">
+            <a class="insta sozialMedia" href="https://instagram.com/aq.stify?utm_medium=copy_link">
+                <img class="icon" src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png" />Instagram
+            </a>
+            <a class="yt sozialMedia" href="YouTube"><img class="icon" src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" />YouTube
+            </a>
+        </div>
+    </div>
+    <div>
+
     </div>
 
 </body>

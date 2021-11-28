@@ -1,115 +1,467 @@
 * {
-  color: white;
-  font-family: Verdana;
+    color: white;
+    font-family: Verdana;
 }
 
 body {
-  background-color: black;
+    background-color: black;
 }
+
 
 /* NavBar */
 
 .topnav {
-  overflow: hidden;
-  margin: 0px 15px;
+    overflow: hidden;
+    margin: 5px 15px;
+    padding-bottom: 5px;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 16px 20px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-  display: none;
+    display: none;
 }
 
-/* Dropdown container - needed to position the dropdown content */
+.navLogo {
+    height: 55px;
+}
+
 .dropdown {
-  float: left;
-  overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
 
-/* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
-/* Style the dropdown content (hidden by default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-  color: white;
-  border-bottom: white solid 2px;
+    color: white;
+    border-bottom: white solid 2px;
 }
 
 .headerIcon {
-  width: 50px;
+    width: 50px;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child),
-  .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav a:hover,
-  .dropdown:hover .dropbtn {
-    border-bottom: none;
-    background-color: gray;
-  }
+    .topnav {
+        margin: 5px 5px;
+    }
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav a:hover,
+    .dropdown:hover .dropbtn {
+        border-bottom: none;
+        background-color: gray;
+    }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: right;
-  }
-  .topnav.responsive .dropdown {
-    float: none;
-  }
-  .topnav.responsive .dropdown-content {
-    position: relative;
-  }
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+/* header */
+
+.header {
     width: 100%;
-    text-align: left;
-  }
+    height: 950px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.headerPicture {
+    display: flex;
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        width: 100%;
+        height: 350px;
+        margin: auto;
+    }
+    .headerPicture {
+        display: flex;
+        margin: auto;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 750px) {
+    .header {
+        width: 100%;
+        height: 350px;
+        margin: auto;
+    }
+    .headerPicture {
+        display: flex;
+        margin: auto;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1024px) {
+    .header {
+        width: 100%;
+        height: 400px;
+        margin: auto;
+    }
+    .headerPicture {
+        display: flex;
+        margin: auto;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+    .header {
+        width: 100%;
+        height: 650px;
+        margin: auto;
+    }
+    .headerPicture {
+        display: flex;
+        margin: auto;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+
+/* the Band */
+
+.bandContainer {
+    max-width: 60%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.headerText {
+    text-align: center;
+}
+
+.bandPicture {
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    padding-bottom: 55px;
+}
+
+.bandMembers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+.bandText {
+    display: flex;
+    margin: 30px 10px 50px 10px;
+}
+
+.names {
+    margin: auto;
+    padding: 0px 0px 15px 0px;
+}
+
+.bandMember {
+    display: grid;
+}
+
+.memberPic {
+    max-width: 200px;
+    margin: auto;
+    box-shadow: 10px 10px 11px grey;
+}
+
+@media screen and (max-width: 800px) {
+    .bandContainer {
+        max-width: 100%;
+        margin: auto;
+    }
+    .bandText {
+        text-align: center;
+        display: flex;
+        margin: 0px 10%;
+    }
+    .bandPicture {
+        max-width: 80%;
+        display: flex;
+        margin: auto;
+        padding-bottom: 55px;
+    }
+    .bandMembers {
+        display: grid;
+        text-align: center;
+    }
+    .bandMember {
+        justify-content: space-around;
+        margin: 0px 0px 25px 0px;
+        padding: 10px;
+    }
+    .memberPic {
+        max-width: 350px;
+        margin: auto;
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1150px) {
+    .bandContainer {
+        max-width: 100%;
+        margin: auto;
+    }
+    .bandText {
+        text-align: center;
+        display: flex;
+        margin: 0px 10%;
+    }
+    .bandPicture {
+        max-width: 80%;
+        display: flex;
+        margin: auto;
+        padding-bottom: 55px;
+    }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1500px) {
+    .bandContainer {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+
+/* contact */
+
+.contactContainer {
+    width: 100%;
+}
+
+.contactBox {
+    margin: auto;
+    width: 640px;
+    padding: 20px 0px 20px 0px;
+}
+
+.contact1 {
+    float: left;
+    width: 300px;
+}
+
+.contact1 div {
+    padding: 10px 0px !important;
+}
+
+.contact2 {
+    float: right;
+    width: 340px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.inputContainer {
+    width: 340px;
+    margin: 0px;
+}
+
+.littleInput {
+    width: 162px;
+    padding: 5px 0px 5px 5px;
+    height: 22px;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0px;
+    margin: 0px !important;
+}
+
+.messageContainer {
+    padding-top: 9px;
+    width: 340px;
+}
+
+#messageInput {
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px 0px 5px 5px;
+    width: 335px;
+    height: 22px;
+    color: black;
+    font-size: 15px;
+    margin: 0px;
+    padding-right: 0px;
+}
+
+.btnContainer {
+    padding-top: 8px;
+}
+
+#idBtn {
+    color: black;
+    float: right;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+    margin: 0px;
+    border: none;
+}
+
+#idBtn:hover {
+    background-color: rgb(24, 119, 24);
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .contactBox {
+        margin: auto;
+        width: 340px;
+        padding: 20px 10px 20px 10px;
+    }
+    .contact2 {
+        float: left;
+        padding-top: 20px;
+    }
+}
+
+
+/* Sozial Media */
+
+.smContainer {
+    clear: both;
+    width: 640;
+    padding: 50px 0px;
+}
+
+.sozialMedia {
+    color: black;
+    padding: 13px 105px 13px 105px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.insta {
+    width: 300px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.yt {
+    width: 300px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.icon {
+    width: 25px;
+    position: relative;
+    top: 6px;
+    right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .smContainer {
+        clear: both;
+        width: 340px;
+        padding: 50px 0px;
+    }
+    .smBox {
+        padding: 0px 10px
+    }
+    .sozialMedia {
+        color: black;
+        padding: 13px 105px 13px 105px;
+        background-color: white;
+        text-decoration: none;
+        width: 110px;
+        display: block;
+    }
+    .insta {
+        width: 130px;
+        margin-bottom: 10px !important;
+        border-radius: 5px;
+        margin: auto;
+    }
+    .yt {
+        width: 130px;
+        border-radius: 5px;
+        margin: auto;
+    }
 }
