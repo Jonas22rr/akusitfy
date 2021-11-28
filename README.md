@@ -1,2 +1,2 @@
 # aqsitfy
-Akustify homepage
+AQstify homepage
