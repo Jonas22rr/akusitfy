@@ -1,7 +1,11 @@
 "use strict";
 let img;
 
-$(document).ready(function () {});
+$(document).ready(function () {
+  this.onInit();
+});
+
+function oninit() {}
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
