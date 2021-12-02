@@ -9,8 +9,6 @@ function oninit() {
     checkUser();
 }
 
-window.onload({});
-
 function checkUser() {
     let check = false;
     const user = {
